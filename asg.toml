@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spaceship_titanic"
+version = "0.1.0"
+description = "Tugas Deployment Model Spaceship Titanic pas lebaran"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas",
+    "scikit-learn",
+    "mlflow",
+    "optuna",
+    "streamlit",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "xgboost"
+]
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
